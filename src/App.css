@@ -1,0 +1,98 @@
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading {
+  background-color: #eeeeee;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 8vh;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+}
+
+.content div {
+  border-right: 1px solid grey;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 10vw;
+}
+
+.content div:last-child {
+  border-right: none
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 15vw;
+  padding: 30px 20px;
+  height: 30vh;
+  border: 2px solid grey;
+  border-radius: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+form input {
+  background-color: lightgrey;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+input[type="submit"] {
+  background-color: green;
+  border-radius: 5px;
+  width: 100px;
+  cursor: pointer;
+}
+
+.description {
+  padding: 30px;
+}
+
+.new-project {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black; 
+  background-color: #eee;
+  border-radius: 10px;
+  width: 100%;
+ 
+}
+
+.new-project div {
+  background-color: green;
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: flex;
+}
+
+.new-project p {
+  overflow-wrap: break-word;
+  width: 200px;
+  text-align: center;
+}
+
+.delete span {
+  cursor: pointer;
+}
